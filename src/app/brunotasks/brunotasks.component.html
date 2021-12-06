@@ -1,0 +1,14 @@
+<h1>Tarefas</h1>
+<hr />
+<div>Nome:</div>
+<div>
+  <input type="text" name="tarefa" [ngModel]="tarefa" />
+  <button (click)="tarefalist.adicionar()">Adicionar</button>
+</div>
+<ul>
+  <li *ngFor="let tarefa of tarefalist.tarefas">
+    {{ tarefalist.tarefa }}
+  </li>
+</ul>
+
+<br />
